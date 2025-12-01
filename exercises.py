@@ -42,9 +42,8 @@ print('Exercise 2:', simple_interest(1500, 3.5, 5))
 #
 # Define your function and call it to display the discounted price.
 
+def apply_discount(price, discount):
+  discounted_price = price - (price * discount / 100)
+  return f"${int(discounted_price)}"
 
-
-print('Exercise 3:', apply_discount(100, 25))
-
-
-
+print('Exercise 3:', apply_discount(80, 10))
